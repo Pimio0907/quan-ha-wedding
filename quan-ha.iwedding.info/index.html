@@ -34,6 +34,27 @@
     var photoGalleries = [];
 </script>
 <body>
+
+    <!-- <audio id="myAudio" controls autoplay>
+        <source src="/cdn.biihappy.com/ziiweb/audio/nhac.mp3">
+    </audio> -->
+
+
+
+    <button id="playButton">Nhấn để phát nhạc</button>
+    
+    <audio id="audioPlayer" loop>
+        <source src="/cdn.biihappy.com/ziiweb/audio/nhac.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        document.getElementById('playButton').addEventListener('click', function() {
+            document.getElementById('audioPlayer').play();
+        });
+    </script
+
+
+
     <div class="page-wrapper flower-fixed-body">
         <div class="preloader">
             <div class="middle">
@@ -992,7 +1013,10 @@
             
                     </ul>
     </div>
-    
+
+
+
+
     <script type="text/javascript">
        function sanitizeJsonString(jsonString) {
             return jsonString
